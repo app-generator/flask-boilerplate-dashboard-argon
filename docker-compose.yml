@@ -14,8 +14,9 @@ services:
     image: "nginx:latest"
     ports:
       - "85:85"
+      - "443:443"
     volumes:
-      - ./nginx:/etc/nginx/conf.d
+      - ./nginx:/etc/nginx/conf.d      
     networks:
       - web_network
     depends_on: 
